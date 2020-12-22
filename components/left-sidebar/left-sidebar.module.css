@@ -1,5 +1,29 @@
 #sidebar {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  height: 500px;
+  margin-left: 0;
+  padding-left: 0px;
+}
+
+#sidebar > nav:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#menuItem {
+  margin: 8px 0;
+  width: 100%;
+  align-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#menuItem:hover {
+  background-color: #8080801f;
+  color: #323ebe;
+}
+
+#menuItem > p {
+  margin-left: 8px;
+  margin-bottom: 0px !important;
 }

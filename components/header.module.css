@@ -1,10 +1,12 @@
 #header {
   padding: 8px 0;
   border-bottom: 1px solid #e8e8e8;
+  background-color: white;
 }
 
 #leftContainer {
   display: flex;
+  padding-left: 0;
 }
 
 #logo {
@@ -40,6 +42,7 @@
 
 #rightContainer {
   padding-top: 4px;
+  padding-right: 0;
 }
 
 .registerButton {
@@ -50,6 +53,7 @@
   padding: 8px 24px;
   font-weight: 600;
   margin-left: 12px;
+  cursor: pointer;
 }
 
 .loginButton {
@@ -60,4 +64,13 @@
   padding: 12px;
   padding: 8px 24px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.registerButton:hover {
+  background-color: #2532bf;
+}
+
+.loginButton:hover {
+  background-color: #e6e8ff;
 }
