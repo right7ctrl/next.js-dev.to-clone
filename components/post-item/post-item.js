@@ -5,7 +5,7 @@ import { FavoriteBorderOutlined, ChatBubbleOutline } from "@material-ui/icons";
 
 function PostItem({ title }) {
   return (
-    <div id={styles.postItem} className="row">
+    <div id={styles.postItem} className="col">
       <div className="col-md-12">
         <div id={styles.user_meta} className="d-flex">
           <Avatar src="https://res.cloudinary.com/practicaldev/image/fetch/s--IRg7BHb_--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/443240/50a350f7-8199-4912-9add-bb54336cf107.jpg" />

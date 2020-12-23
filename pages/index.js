@@ -3,16 +3,20 @@ import styles from "../styles/Index.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LeftSidebar from "../components/left-sidebar/left-sidebar";
 import PostItem from "../components/post-item/post-item";
+import RightSidebar from "../components/right-sidebar/right-sidebar";
+import React, { useState } from "react";
+import LoginModal from "../components/login-modal/login-modal";
 
 export default function Index() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div className={styles.container}>
       <Header />
-      <div style={{ height: 24 }}></div>
-      <div className="container">
+      <div style={{ paddingTop: 84 }} className="container">
         <div className="row">
           <LeftSidebar />
-          <div className="col-md-7">
+          <div className="col-md-7 col-sm-8">
             <div className="row">
               <h5 style={{ textAlign: "left" }}>Posts</h5>
             </div>
@@ -29,14 +33,11 @@ export default function Index() {
             <PostItem title="My Advice to New Programmers After Coding for the Last 3 Years" />
             <PostItem title="My Advice to New Programmers After Coding for the Last 3 Years" />
           </div>
-          <div
-            className="col-md-3"
-            style={{ backgroundColor: "red", height: 500 }}
-          >
-            Right Sidebar
-          </div>
+          <LoginModal show={modalShow} onHide={() => setModalShow(false)} />
+          <RightSidebar />
         </div>
       </div>
+      <footer>Footer</footer>
     </div>
   );
 }

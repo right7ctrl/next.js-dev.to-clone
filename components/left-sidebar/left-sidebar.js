@@ -4,7 +4,7 @@ import { Home } from "@material-ui/icons";
 
 export default function LeftSidebar() {
   return (
-    <div className="col-md-2" id={style.sidebar}>
+    <div className="col-md-2 col-sm-4" id={style.sidebar}>
       <nav>
         <h6>Menü</h6>
         <div id={style.menuItem} className="d-flex">
@@ -176,7 +176,16 @@ export default function LeftSidebar() {
       <nav>
         <h6>Trendler</h6>
         <div id={style.menuItem} className="d-flex">
-          <p>#Anasayfa</p>
+          <p>#soru</p>
+        </div>
+        <div id={style.menuItem} className="d-flex">
+          <p>#gündem</p>
+        </div>
+        <div id={style.menuItem} className="d-flex">
+          <p>#bişeyler</p>
+        </div>
+        <div id={style.menuItem} className="d-flex">
+          <p>#neolaki</p>
         </div>
       </nav>
     </div>
