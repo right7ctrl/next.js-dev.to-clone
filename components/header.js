@@ -2,20 +2,14 @@ import React, { useState } from "react";
 import Link from "next/link";
 import style from "./header.module.css";
 import { Search } from "@material-ui/icons";
-import LoginModal from "../components/login-modal/login-modal";
 
 export default function Header() {
   const [showModal, setModal] = useState(false);
 
-  const toggle = () => {
-    setModal(!showModal);
-  };
-
   return (
     <div id={style.header} className="fixed-top">
-      <LoginModal show={showModal} handleClose={() => toggle()} />
       <div className="container">
-        <div class="row">
+        <div className="row">
           <div id={style.leftContainer} class="col">
             <img
               id={style.logo}
@@ -27,7 +21,7 @@ export default function Header() {
             </div>
           </div>
           <div id={style.rightContainer} class="col-xs">
-            <a onClick={() => toggle()} className={style.registerButton}>
+            <a onClick={() => setModal(true)} className={style.registerButton}>
               Kayıt Ol
             </a>
             <div className={style.loginButton}>Giriş Yap</div>

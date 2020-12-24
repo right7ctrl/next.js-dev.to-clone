@@ -2,6 +2,7 @@ import { Avatar } from "@material-ui/core";
 import React from "react";
 import styles from "./post-item.module.css";
 import { FavoriteBorderOutlined, ChatBubbleOutline } from "@material-ui/icons";
+import Link from "next/link";
 
 function PostItem({ title }) {
   return (
@@ -15,7 +16,9 @@ function PostItem({ title }) {
           </div>
         </div>
         <div className={styles.contentContainer}>
-          <h5 className={styles.title}>{title}</h5>
+          <Link href="/login">
+            <h5 className={styles.title}>{title}</h5>
+          </Link>
           <div id={styles.tagsContainer} className="d-flex">
             <span className={styles.tagContainer}>#javascript</span>
             <span className={styles.tagContainer}>#webdev</span>

@@ -1,15 +1,12 @@
+import React from "react";
 import Header from "../components/header";
 import styles from "../styles/Index.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LeftSidebar from "../components/left-sidebar/left-sidebar";
 import PostItem from "../components/post-item/post-item";
 import RightSidebar from "../components/right-sidebar/right-sidebar";
-import React, { useState } from "react";
-import LoginModal from "../components/login-modal/login-modal";
 
 export default function Index() {
-  const [modalShow, setModalShow] = useState(false);
-
   return (
     <div className={styles.container}>
       <Header />
