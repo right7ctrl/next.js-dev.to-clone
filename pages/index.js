@@ -33,7 +33,7 @@ export default function Index() {
             <PostItem title="My Advice to New Programmers After Coding for the Last 3 Years" />
             <PostItem title="My Advice to New Programmers After Coding for the Last 3 Years" />
           </div>
-          <LoginModal show={modalShow} onHide={() => setModalShow(false)} />
+
           <RightSidebar />
         </div>
       </div>

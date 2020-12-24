@@ -71,6 +71,8 @@
 
 .registerButton:hover {
   background-color: #2532bf;
+  text-decoration: none;
+  color: #fff;
 }
 
 .loginButton:hover {
