@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+.content {
+  margin-top: 32px;
+}
+
 .tagContainer:hover {
   background-color: lightgray;
   color: black;
@@ -23,14 +27,37 @@
   font-weight: 700;
 }
 
+.leftBarItem {
+  margin-bottom: 32px;
+  text-align: center;
+  align-items: center;
+}
+
+.leftBar .leftBarItem > p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 .rightSidebar {
   background-color: red;
   height: 500px;
   border-radius: 8px;
 }
-.mainContainer {
+.mainChild {
+  padding: 24px;
   background-color: white;
-  height: 500px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  margin-bottom: 32px;
+}
+.formGroup {
+  width: 90%;
+  float: right;
+  margin: auto;
+}
+
+.discussonContainer {
+  padding: 0 16px;
+  margin-top: 24px;
 }

@@ -3,11 +3,15 @@ import Header from "../components/header";
 import Layout from "../components/layout/layout";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Login() {
   const router = useRouter();
   return (
     <div id="__next" className="container col-sm-12 col-md-3">
+      <Head>
+        <title>Kayıt Ol</title>
+      </Head>
       <Layout>
         <div className="logoContainer">
           <img

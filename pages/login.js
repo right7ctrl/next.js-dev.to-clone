@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { Button, Form } from "react-bootstrap";
 import Layout from "../components/layout/layout";
+import Head from "next/head";
 
 export default function Login() {
   return (
     <div id="__next" className="container col-sm-12 col-md-3">
+      <Head>
+        <title>Giriş Yap</title>
+      </Head>
       <Layout>
         <div className="logoContainer">
           <img
