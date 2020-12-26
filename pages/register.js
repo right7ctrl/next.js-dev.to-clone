@@ -1,7 +1,10 @@
 import { Button, Form } from "react-bootstrap";
+import Header from "../components/header";
 import Layout from "../components/layout/layout";
+import { useRouter } from "next/router";
 
 export default function Login() {
+  const router = useRouter();
   return (
     <div id="__next" className="container col-sm-12 col-md-3">
       <Layout>
@@ -10,7 +13,7 @@ export default function Login() {
             className="logo"
             src="https://play-lh.googleusercontent.com/BbOCITw24y0uayV9jSAJ7lv5iLs70QhhXwhD4ORWT1Yi3wYocyBWOv38jEwtKzuc_RE=s360-rw"
           />
-          <h3>Giriş Yap</h3>
+          <h3>Kayıt Ol</h3>
           <p>Kayıtlı hesabınız ile giriş yapın</p>
         </div>
         <Form.Group controlId="formBasicEmail">
@@ -19,12 +22,15 @@ export default function Login() {
         <Form.Group controlId="formBasicPassword">
           <Form.Control type="password" placeholder="Şifre" />
         </Form.Group>
+        <Form.Group controlId="formBasicPassword2">
+          <Form.Control type="password" placeholder="Şifre" />
+        </Form.Group>
         <div className="forgotPassword">
           <a href="">Şifremi Unuttum</a>
         </div>
 
         <Button size="lg" block className="loginBtn">
-          Giriş Yap
+          Kayıt Ol
         </Button>
         <div className="dontHaveAcc d-flex">
           <div id="dder"></div>
@@ -32,8 +38,13 @@ export default function Login() {
           <div id="dder"></div>
         </div>
 
-        <Button size="lg" block className="regButton">
-          Hemen Kaydolun
+        <Button
+          onClick={() => router.push("/register")}
+          size="lg"
+          block
+          className="regButton"
+        >
+          Giriş yap
         </Button>
       </Layout>
     </div>

@@ -15,10 +15,10 @@ export default function LeftSidebar() {
             height="24"
             role="img"
             aria-labelledby="a66k3o2gnvp2tr0pnnyn5d3afdzhmyq7"
-            class="crayons-icon crayons-icon--default"
+            className="crayons-icon crayons-icon--default"
           >
             <title id="a66k3o2gnvp2tr0pnnyn5d3afdzhmyq7">Home</title>
-            <g class="nc-icon-wrapper">
+            <g className="nc-icon-wrapper">
               <path
                 fill="#A0041E"
                 d="M13.344 18.702h-2a.5.5 0 01-.5-.5v-7a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v7a.5.5 0 01-.5.5z"
@@ -53,7 +53,7 @@ export default function LeftSidebar() {
             width="24"
             height="24"
           >
-            <g class="nc-icon-wrapper">
+            <g className="nc-icon-wrapper">
               <path
                 fill="#FFD983"
                 d="M36 4H14a4 4 0 00-4 4v24H8a4 4 0 000 8h24a4 4 0 004-4V12a4 4 0 000-8z"
@@ -78,7 +78,7 @@ export default function LeftSidebar() {
             width="24"
             height="24"
           >
-            <g class="nc-icon-wrapper">
+            <g className="nc-icon-wrapper">
               <path
                 fill="#292F33"
                 d="M10 19h24v2H10zm15 15c0 2.208-.792 4-3 4-2.209 0-3-1.792-3-4s.791-2 3-2c2.208 0 3-.208 3 2z"
@@ -146,7 +146,7 @@ export default function LeftSidebar() {
             width="24"
             height="24"
           >
-            <g class="nc-icon-wrapper">
+            <g className="nc-icon-wrapper">
               <path
                 fill="#FFD983"
                 d="M33 15.06c0 6.439-5 7.439-5 13.44 0 3.098-3.123 3.359-5.5 3.359-2.053 0-6.586-.779-6.586-3.361C15.914 22.5 11 21.5 11 15.06c0-6.031 5.285-10.92 11.083-10.92C27.883 4.14 33 9.029 33 15.06z"
