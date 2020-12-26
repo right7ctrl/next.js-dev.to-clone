@@ -6,11 +6,7 @@ import style from "./header.module.css";
 import { Search } from "@material-ui/icons";
 
 export default function Header() {
-  const [showModal, setModal] = useState(false);
   const router = useRouter();
-  const handleClick = () => {
-    router.push("/login");
-  };
   return (
     <div id={style.header} className="fixed-top">
       <div className="container">
@@ -28,12 +24,12 @@ export default function Header() {
             </div>
           </div>
           <div id={style.rightContainer} className="col-xs">
-            <Link href="/login">
-              <a onClick={() => handleClick()} className={style.registerButton}>
-                Kayıt Ol
-              </a>
+            <Link href="/register">
+              <a className={style.registerButton}>Kayıt Ol</a>
             </Link>
-            <div className={style.loginButton}>Giriş Yap</div>
+            <Link href="/login">
+              <a className={style.loginButton}>Giriş Yap</a>
+            </Link>
           </div>
         </div>
       </div>

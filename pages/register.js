@@ -2,6 +2,7 @@ import { Button, Form } from "react-bootstrap";
 import Header from "../components/header";
 import Layout from "../components/layout/layout";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Login() {
   const router = useRouter();
@@ -37,15 +38,11 @@ export default function Login() {
           <p>Hesabınız yok mu?</p>
           <div id="dder"></div>
         </div>
-
-        <Button
-          onClick={() => router.push("/register")}
-          size="lg"
-          block
-          className="regButton"
-        >
-          Giriş yap
-        </Button>
+        <Link href="/login">
+          <Button size="lg" block className="regButton">
+            Giriş yap
+          </Button>
+        </Link>
       </Layout>
     </div>
   );

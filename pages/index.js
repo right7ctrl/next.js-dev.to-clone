@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <div className={styles.container}>
       <Layout>
-        <div style={{ paddingTop: 84 }} className="container">
+        <div className="container">
           <div className="row">
             <LeftSidebar />
             <div className="col-md-7 col-sm-8">

@@ -16,7 +16,7 @@ function PostItem({ title }) {
           </div>
         </div>
         <div className={styles.contentContainer}>
-          <Link href="/login">
+          <Link href="/t/12312312312312321">
             <h5 className={styles.title}>{title}</h5>
           </Link>
           <div id={styles.tagsContainer} className="d-flex">

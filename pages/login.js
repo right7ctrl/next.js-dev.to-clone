@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button, Form } from "react-bootstrap";
 import Layout from "../components/layout/layout";
 
@@ -31,10 +32,11 @@ export default function Login() {
           <p>Hesabınız yok mu?</p>
           <div id="dder"></div>
         </div>
-
-        <Button size="lg" block className="regButton">
-          Hemen Kaydolun
-        </Button>
+        <Link href="/register">
+          <Button size="lg" block className="regButton">
+            Hemen Kaydolun
+          </Button>
+        </Link>
       </Layout>
     </div>
   );

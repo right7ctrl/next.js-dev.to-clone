@@ -22,7 +22,7 @@ a {
 
 div#__next {
   background-color: #edf0f1;
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 .logo {
@@ -63,7 +63,7 @@ div#__next {
 .regButton {
   background-color: white !important;
   border: 2px solid #3b49df;
-  color: #3b49df;
+  color: #3b49df !important;
   cursor: pointer;
 }
 

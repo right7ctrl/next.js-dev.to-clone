@@ -1,0 +1,36 @@
+#tagsContainer {
+  margin-bottom: 4px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.tagContainer {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: yellow;
+  margin-right: 12px;
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+}
+
+.tagContainer:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.rightSidebar {
+  background-color: red;
+  height: 500px;
+  border-radius: 8px;
+}
+.mainContainer {
+  background-color: white;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
