@@ -62,9 +62,6 @@
   margin-top: 24px;
 }
 
-.commentContainer {
-  width: 100%;
-}
 .actionsWrapper {
   text-align: center;
 }
@@ -85,9 +82,4 @@
 
 .formFieldContainer {
   margin-top: 24px;
-}
-.innerCommentContainer {
-  border: 1px solid #ccc;
-  width: 100%;
-  margin-left: 12px;
 }

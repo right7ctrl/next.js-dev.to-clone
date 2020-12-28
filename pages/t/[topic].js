@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import styles from "./topic.module.css";
 import Layout from "../../components/layout/layout";
+import CommentItem from "../../components/comment-item/comment-item";
 import ReadNextItem from "../../components/read-next-item/read-next-item";
 import { Form } from "react-bootstrap";
 import {
@@ -78,14 +79,7 @@ function Topic() {
                 </Form.Group>
               </div>
               <div className={styles.discussonContainer + " row d-flex"}>
-                <div className={styles.commentContainer}>
-                  <div className="d-flex">
-                    <Avatar src="https://res.cloudinary.com/practicaldev/image/fetch/s--IRg7BHb_--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/443240/50a350f7-8199-4912-9add-bb54336cf107.jpg" />
-                    <div className={styles.innerCommentContainer}>
-                      <h6>asdadasd</h6>
-                    </div>
-                  </div>
-                </div>
+                <CommentItem />
               </div>
             </div>
             <div className={styles.mainChild + " col"}>
