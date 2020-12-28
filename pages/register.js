@@ -1,5 +1,4 @@
 import { Button, Form } from "react-bootstrap";
-import Header from "../components/header";
 import Layout from "../components/layout/layout";
 import { useRouter } from "next/router";
 import Link from "next/link";
