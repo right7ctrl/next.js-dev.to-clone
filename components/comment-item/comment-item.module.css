@@ -7,6 +7,7 @@
 }
 
 .commentContainer {
+  margin-bottom: 12px;
   width: 100%;
 }
 
@@ -35,4 +36,29 @@
   padding: 0;
   margin: 0;
   margin-left: 12px;
+}
+.innerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  align-self: flex-start;
+  align-content: stretch;
+}
+.wrapper {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.actionsWrapper {
+  flex-direction: row;
+  margin-left: 42px;
+  font-size: 14px;
+}
+.likes {
+  margin-right: 24px;
+}
+
+.actionIcon {
+  font-size: 14px;
 }

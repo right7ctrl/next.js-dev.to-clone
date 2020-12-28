@@ -79,7 +79,18 @@ function Topic() {
                 </Form.Group>
               </div>
               <div className={styles.discussonContainer + " row d-flex"}>
-                <CommentItem />
+                <CommentItem content="Your website looks amazing but it's not responsive on mobile view" />
+
+                <CommentItem content="You can get free domains through GitHub students developer pack." />
+
+                <CommentItem
+                  content="Ask lots of questions... then ask more. Ask why the company is
+            interested in a new website and what that will ultimately solve.
+            Nobody just buys a website. There is a particular reason and it's up
+            to you to find that out. Find the real 'why' and you'll have a deal."
+                />
+
+                <CommentItem content="Your website looks amazing but it's not responsive on mobile view" />
               </div>
             </div>
             <div className={styles.mainChild + " col"}>
