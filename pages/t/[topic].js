@@ -103,11 +103,42 @@ function Topic() {
               <ReadNextItem />
             </div>
           </div>
-          <div className={styles.rightSidebar + " col-md-3 col-sm-12"}></div>
+          <div className={styles.rightSidebar + " col-md-3 col-sm-12"}>
+            <div className="row d-flex">
+              <Avatar
+                className={styles.commenterImg}
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--IRg7BHb_--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/443240/50a350f7-8199-4912-9add-bb54336cf107.jpg"
+              />
+              <p>
+                👨‍🚀 Making the best platform for all developers --
+                https://thesmartcoder.dev 💻 Programming is the best job in the
+                world! 🤟 👨‍💻 Coder 🧙 Writer 🏰 Building an Empire
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps(context) {
+  var a;
+  await fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then((response) => response.json())
+    .then((json) => (a = json));
+  return {
+    props: {
+      a,
+    }, // will be passed to the page component as props
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: true,
+  };
 }
 
 export default Topic;

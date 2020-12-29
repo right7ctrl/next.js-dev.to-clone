@@ -7,10 +7,10 @@
 .tagContainer {
   padding: 4px 8px;
   border-radius: 4px;
-  background-color: yellow;
+  background-color: black;
   margin-right: 12px;
   font-size: 14px;
-  color: gray;
+  color: white;
   cursor: pointer;
 }
 
