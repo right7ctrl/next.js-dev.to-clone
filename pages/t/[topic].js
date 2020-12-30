@@ -28,7 +28,7 @@ function Topic() {
           >
             <div className={styles.leftBarItem}>
               <FavoriteBorderOutlined className={styles.leftBarIcon} />
-              <p>12</p>
+              <p>121</p>
             </div>
             <div className={styles.leftBarItem}>
               <BookmarkBorderOutlined className={styles.leftBarIcon} />
