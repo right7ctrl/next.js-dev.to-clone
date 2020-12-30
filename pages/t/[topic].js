@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import styles from "./topic.module.css";
 import Layout from "../../components/layout/layout";
+import TopicRightSidebar from "../../components/topic-right-sidebar/topic-right-sidebar";
 import CommentItem from "../../components/comment-item/comment-item";
 import ReadNextItem from "../../components/read-next-item/read-next-item";
 import { Form } from "react-bootstrap";
@@ -9,6 +10,8 @@ import {
   FavoriteBorderOutlined,
   BookmarkBorderOutlined,
   CommentOutlined,
+  MoreHoriz,
+  ArrowBackIos,
 } from "@material-ui/icons";
 import { Avatar } from "@material-ui/core";
 
@@ -30,6 +33,14 @@ function Topic() {
             <div className={styles.leftBarItem}>
               <BookmarkBorderOutlined className={styles.leftBarIcon} />
               <p>28</p>
+            </div>
+            <div className={styles.leftBarItem}>
+              <MoreHoriz className={styles.leftBarIcon} />
+            </div>
+            <div className={styles.voteContainer}>
+              <ArrowBackIos className={styles.upVoteIcon} />
+              <p>55</p>
+              <ArrowBackIos className={styles.downVoteIcon} />
             </div>
           </div>
           <div className={styles.mainContainer + " col-md-8 col-sm-12"}>
@@ -103,19 +114,7 @@ function Topic() {
               <ReadNextItem />
             </div>
           </div>
-          <div className={styles.rightSidebar + " col-md-3 col-sm-12"}>
-            <div className="row d-flex">
-              <Avatar
-                className={styles.commenterImg}
-                src="https://res.cloudinary.com/practicaldev/image/fetch/s--IRg7BHb_--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/443240/50a350f7-8199-4912-9add-bb54336cf107.jpg"
-              />
-              <p>
-                👨‍🚀 Making the best platform for all developers --
-                https://thesmartcoder.dev 💻 Programming is the best job in the
-                world! 🤟 👨‍💻 Coder 🧙 Writer 🏰 Building an Empire
-              </p>
-            </div>
-          </div>
+          <TopicRightSidebar />
         </div>
       </div>
     </Layout>
